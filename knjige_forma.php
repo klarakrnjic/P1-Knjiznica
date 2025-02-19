@@ -15,7 +15,8 @@ if (isset($_POST["submit"])) {
             protagonist = :protagonist, 
             broj_stranica = :broj_stranica, 
             sazetak = :sazetak, 
-            status = :status
+            status = :status,
+            godina_izdavanja = :godina_izdavanja
         WHERE id = :id");
 
         $upit->execute([
@@ -25,6 +26,7 @@ if (isset($_POST["submit"])) {
             ':broj_stranica' => $_POST["broj_stranica"],
             ':sazetak' => $_POST["sazetak"],
             ':status' => $status,
+            ':godina_izdavanja' => $_POST["godina_izdavanja"],
             ':id' => $_POST["id"]
         ]);
 
@@ -42,7 +44,8 @@ if (isset($_POST["submit"])) {
             ':sazetak' => $_POST["sazetak"],
             ':protagonist' => $_POST["protagonist"],
             ':broj_stranica' => $_POST["broj_stranica"],
-            ':status' => $status
+            ':status' => $status,
+            ':godina_izdavanja' => $_POST["godina_izdavanja"]
         ]);
 
         header("Location: knjige_admin.php");
@@ -63,6 +66,7 @@ if (isset($_POST["submit"])) {
         $broj_stranica = $rez["broj_stranica"];
         $id = $_GET["id"];
         $status = $rez["status"]; // povuci podatke (0, 1, or 2)
+        $godina_izdanja = $rez["godina_izdavanja"];
 
     } else {
         // otvori praznu formu
@@ -73,6 +77,7 @@ if (isset($_POST["submit"])) {
         $broj_stranica = "";
         $status = 0;
         $id = "";
+        $godina_izdanja = "";
     }
 }
 ?>
@@ -96,6 +101,7 @@ if (isset($_POST["submit"])) {
         <option value="1" <?php echo ($status == 1) ? 'selected' : ''; ?>>Pročitano</option>
         <option value="2" <?php echo ($status == 2) ? 'selected' : ''; ?>>Želja</option>
     </select>
+    Godina izdavanja: <input type="text" name="godina_izdavanja" value="<?php echo htmlspecialchars($godina_izdanja); ?>"> <br>
 
     <br>
     <input type="submit" name="submit" value="Dalje" class="button">

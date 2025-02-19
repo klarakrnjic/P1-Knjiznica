@@ -43,6 +43,8 @@ CREATE TABLE `knjige`  (
   `protagonist` varchar(200) CHARACTER SET utf8 COLLATE utf8_slovenian_ci NULL DEFAULT NULL,
   `broj_stranica` int NULL DEFAULT NULL,
   `status` int NOT NULL DEFAULT 0,
+  `godina_izdavanja` varchar(4) CHARACTER SET utf8 COLLATE utf8_slovenian_ci NULL DEFAULT NULL,
+
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2703 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci COMMENT = 'InnoDB free: 9216 kB' ROW_FORMAT = DYNAMIC;
 
@@ -54,23 +56,23 @@ Dvadesetogodišnja Violet Sorrengail trebala je pohađati Kvadrant pisara i živ
 A kad si sitna, niska i krhka, smrt vreba iza svakog ugla… jer zmajevi se ne združuju s nejakim ljudskim bićima. Spale ih. Kao da joj sve to nije dosta, Violet je trn u oku i prilično poželjna meta svima onima koji zamjeraju njezinoj majci krvavo gušenje pobune protiv kraljevstva. Violet će se morati osloniti na svoju domišljatost da preživi.
 Hoće li joj Xaden Riorson, prokleto privlačan momak, a ujedno i potomak obitelji koja prezire njezinu majku, u tome pomoći ili odmoći?
 Može li mu uopće vjerovati?
-Prijatelji, neprijatelji, ljubavnici. Svi u Vojnom učilištu Basgiath imaju vlastiti cilj. Jer jednom kad si unutra, postoje samo dva izlaza: diploma ili smrt.', 'Violet Sorrengail', '548\r\n', 0);
-INSERT INTO `knjige` VALUES (5, 'Rebecca Yarros', 'Željezni plamen', 'Svi su očekivali da Violet Sorrengail neće preživjeti prvu godinu Vojnog učilišta Basgiath – ni ona sama nije bila sigurna da je u stanju odraditi sve zadatke koji su stavljeni pred nju. Ali Vršidba je bila tek prva nemoguća kušnja… Sad počinje prava obuka, a Violet se već pita kako sačuvati živu glavu. Nije problem samo u tome što je obuka mukotrpna i okrutna, čak ni u tome što je osmišljena da rastegne jahačeve sposobnosti da trpi bol onkraj svih granica – tu je i novi podzapovjednik, kojemu je osobna misija pokazati Violet koliko je točno bespomoćna – i koliko će sve biti lakše ako izda muškarca kojeg voli. Iako je Violetino tijelo slabije i krhkije od ostalih, ona i dalje ima svoj um – i željeznu volju. A vodstvo zaboravlja na najvažniju lekciju koju ju je Basgiath naučio: jahači zmajeva kreiraju vlastita pravila. Dok se događaji izmjenjuju munjevitom brzinom, a okolnosti na Učilištu mijenjaju iz dana u dan, Violet je uvjerena kako je više ništa ne može iznenaditi. Međutim, jedan događaj mogao bi joj promijeniti život iz temelja…', 'Violet Sorrengail', '776\r\n', 0);
+Prijatelji, neprijatelji, ljubavnici. Svi u Vojnom učilištu Basgiath imaju vlastiti cilj. Jer jednom kad si unutra, postoje samo dva izlaza: diploma ili smrt.', 'Violet Sorrengail', '548\r\n', 0, '2023');
+INSERT INTO `knjige` VALUES (5, 'Rebecca Yarros', 'Željezni plamen', 'Svi su očekivali da Violet Sorrengail neće preživjeti prvu godinu Vojnog učilišta Basgiath – ni ona sama nije bila sigurna da je u stanju odraditi sve zadatke koji su stavljeni pred nju. Ali Vršidba je bila tek prva nemoguća kušnja… Sad počinje prava obuka, a Violet se već pita kako sačuvati živu glavu. Nije problem samo u tome što je obuka mukotrpna i okrutna, čak ni u tome što je osmišljena da rastegne jahačeve sposobnosti da trpi bol onkraj svih granica – tu je i novi podzapovjednik, kojemu je osobna misija pokazati Violet koliko je točno bespomoćna – i koliko će sve biti lakše ako izda muškarca kojeg voli. Iako je Violetino tijelo slabije i krhkije od ostalih, ona i dalje ima svoj um – i željeznu volju. A vodstvo zaboravlja na najvažniju lekciju koju ju je Basgiath naučio: jahači zmajeva kreiraju vlastita pravila. Dok se događaji izmjenjuju munjevitom brzinom, a okolnosti na Učilištu mijenjaju iz dana u dan, Violet je uvjerena kako je više ništa ne može iznenaditi. Međutim, jedan događaj mogao bi joj promijeniti život iz temelja…', 'Violet Sorrengail', '776\r\n', 0, '2024');
 INSERT INTO `knjige` VALUES (12, 'Jorn Lier Horst, Thomas Enger', 'Odbrojavanje', 'POZNATOJ SPORTAŠICI, KOJA JE UPRAVO OBJAVILA INTRIGANTNU BIOGRAFIJU, GUBI SE SVAKI TRAG. NIJE JEDINA… Kad se počnu nizati ubojstva, policijskom inspektoru Alexanderu Blixu jasno je da je slučaj složeniji nego što se čini, i da nemaju posla s ‘običnim’ ubojicom. TKO JE SLJEDEĆI? Novinarka Emma Ramm, koja se inače bavi slavnima, spletom okolnosti postane dijelom krvave slagalice. Ubojica je sve maštovitiji… GDJE JE KRAJ? Žrtve se nižu, jedna za drugom. Hoće li neuhvatljivi psihopat stati na ‘jedinici’? Ili krvava brojalica završava nulom? I tko će biti posljednja žrtva?
 PRVI ZAJEDNIČKI ROMAN NAGRAĐIVANIH NORVEŠKIH PISACA KRIMIĆA
-Inspektor Alexander Blix i celebrity novinarka Emma Ramm pokušat će razotkriti serijskog ubojicu gladnog publiciteta, u eksplozivnom romanu koji nezaustavljivo osvaja čitatelje i kritiku diljem Europe.', 'Alexander Blix', '338\r\n', 0);
+Inspektor Alexander Blix i celebrity novinarka Emma Ramm pokušat će razotkriti serijskog ubojicu gladnog publiciteta, u eksplozivnom romanu koji nezaustavljivo osvaja čitatelje i kritiku diljem Europe.', 'Alexander Blix', '338\r\n', 0, '2023');
 INSERT INTO `knjige` VALUES (22, 'Hannah Grace', 'Na tankom ledu', 'Anastasia Allen cijeli život marljivo radi kako bi ostvarila svoje snove u umjetničkom klizanju. Uz treninge i studijske obveze, drži se rasporeda koji bi rasplakao i najmotiviranijeg studenta. Uvijek cilja prvo mjesto. Bez iznimke. Ne dopušta zamjene ili prekide u svojem pomno isplaniranom rasporedu. I u njezinu životu nema mjesta za ozbiljnu vezu.
 Nathan Hawkins nikad se nije susreo s problemom koji nije mogao riješiti. Kao kapetan hokejaškog tima, on zna da je na njemu sva odgovornost. Požrtvovan je i spreman odreći se svega, čak i svojeg mjesta u ekipi, kako bi zadržao momčad na ledu.
 Kada nesporazum natjera dva tima da dijele klizalište, a Anastasijin partner zadobije ozljedu, Nate zamjenjuje hokejaški štap za tajice, a snagu, eksplozivnost i brzinu za eleganciju, okretnost i gracioznost.
 Anastasia je sigurna da joj ležerna zabava s Nateom neće izmaknuti čvrsto tlo pod nogama.
-Pa ona ionako ne voli hokejaše...', 'Anastasia Allen', '408\r\n', 0);
+Pa ona ionako ne voli hokejaše...', 'Anastasia Allen', '408\r\n', 0, '2023');
 INSERT INTO `knjige` VALUES (47, 'Javier Castillo', 'Soul Game', 'Novi eksplozivni triler autorice međunarodnog bestselera, Snježna djevojka - uskoro će postati glavna Netflixova serija!
 --
 Kada istraživačkoj novinarki Miren Triggs pošalju fotografiju nestale djevojke, to je prvi obećavajući trag u desetljećima dugom neriješenom slučaju koji nastavlja progoniti njezinu obitelj.
 Miren je odmah zaintrigirana ovim novim tragom. Može li to biti prvi korak u pronalaženju nestale djevojke - i može li Miren biti ta koja će to učiniti?
 Međutim, prije nego što ima priliku slijediti trag, pozvana je da izvijesti o šokantnom ubojstvu. U predgrađu Queensa pronađeno je razapeto tijelo.
 Miren je razapeta između zločina iz prošlosti i sadašnjosti. No je li moguće da su ti slučajevi povezani?
-I u potrazi za istinom, stavlja li se Miren u vidokrug ubojice?', 'Miren Triggs', '400\r\n', 0);
+I u potrazi za istinom, stavlja li se Miren u vidokrug ubojice?', 'Miren Triggs', '400\r\n', 0, '2020');
 
 -- ----------------------------
 -- Table structure for popis zelja
