@@ -65,6 +65,16 @@ $upit = $db->query("SELECT * FROM knjige WHERE id= $id");
 $rez=$upit->fetchAll();
 
 echo $rez[0]["sazetak"];
+?></br>
+
+<b>Godina izdavanja: </b>
+    <?php
+$id=isset($_GET["id"]) ? $_GET["id"] : 0;
+
+$upit = $db->query("SELECT * FROM knjige WHERE id= $id");
+$rez=$upit->fetchAll();
+
+echo $rez[0]["godina_izdavanja"];
 ?></br><br>
 
 </div>
